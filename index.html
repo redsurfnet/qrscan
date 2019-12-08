@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+	<!-- Custom color navegador Chrome,Firefox,Opera y Vivaldi -->
+    <meta name="theme-color" content="#3372a2"/>
+    <meta name="apple-movile-web-app-status-bar-style" content="#3372a2"/>
+    <meta name="msaplication-navbutton-color" content="#3372a2"/>
+    <title>SurfNet</title>
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+    <!--<link rel="icon" type="image/x-icon" href="img/favicon.ico">-->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->   
+	<link href="scan/css/scan.css" rel="stylesheet">
+   <style>
+   body{
+	font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    padding-top:90px;
+    height: 90%;
+    margin: 0;
+	background:#f0f2f5;
+	color:#696969;
+/*background: url('../img/bg.jpg') no-repeat center center fixed; 
+	background-position: center center;
+	background-repeat:  no-repeat;
+    background-attachment: fixed;
+	background-size:  cover;
+	background-color: #fff;*/
+ /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */    
+}
+/*============ Navbar css============== */
+/*.example6 .navbar-brand{ 
+ background: url('../img/logonav.png') center / contain no-repeat;
+  width: 200px;
+}*/
+.tulisannav {
+	font-size:1em;
+	color:#000;
+	font-weight: bold;
+}
+.navbar {
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.3);
+}
+.navbar-default {	
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(47%, #f6f6f6), to(gainsboro)); 
+    background: -webkit-linear-gradient(#fff 0%, #f6f6f6 47%, gainsboro 100%); 
+    background: linear-gradient(#fff 0%, #f6f6f6 47%, gainsboro 100%);    
+}
+.navbar-brand {
+    padding: 6px 15px;
+}
+.navbar-nav {
+    text-align: center;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #FFC107;
+    background-color: transparent;
+}
+.navbar-toggle {
+   border: none;
+   background: transparent !important;
+   margin-right: 10px;
+}
+.navbar-toggle:hover {
+   background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+   width: 22px;
+   transition: all 0.2s;
+   background-color: #00a9e0 !important;
+}
+.navbar-toggle .top-bar {
+   transform: rotate(45deg);
+   transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+   opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+   transform: rotate(-45deg);
+   transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+   transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+   opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+   transform: rotate(0);
+}
+.img{
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+/*====== navbar css RESPONSIVE======*/
+@media (max-width: 768px) {
+	 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #00c0ff;
+    background-color: #f0f0f0;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #f0f0f0;
+    color: #00c0ff;
+}
+.navbar-default{background:#f8f8f8;
+}
+.navbar-header{	
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(47%, #f6f6f6), to(gainsboro)); 
+    background: -webkit-linear-gradient(#fff 0%, #f6f6f6 47%, gainsboro 100%); 
+    background: linear-gradient(#fff 0%, #f6f6f6 47%, gainsboro 100%);
+	}
+}
+@media (min-width: 768px) {
+	.navbar {
+		min-height: 60px;
+	}	
+	.navbar-brand {
+		padding: 10px 15px;
+	}	
+	.navbar-nav>li>a {
+		margin-top: 5px;
+	}	
+	.img{
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+}
+/*END navbar css RESPONSIVE */ 
+/*--------- END Navbar css -------*/
+.well {
+    padding: 0 15px;
+    background: #fefefe;
+    border-radius: 8px;
+    /* border: 2px solid #CCC; */
+    -moz-box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+    -webkit-box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+    box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+}
+  </style> 
+</head>
+<body class="">   
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+		           <span class="sr-only">Toggle navigation</span>
+		           <span class="icon-bar top-bar"></span>
+		           <span class="icon-bar middle-bar"></span>
+		           <span class="icon-bar bottom-bar"></span>
+		        </button>
+                <a class="navbar-brand" href="http://loginsurfnet.com/login">
+		            <img alt="logo" src="img/logonav.png" class="img-responsive">
+		        </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-left tulisannav">
+				    <li class="active"><a href="http://loginsurfnet.com/login">LOGIN <span class="sr-only">(current)</span></a></li>
+					<li><a href="http://loginsurfnet.com/about.html">ABOUT</a></li>
+					<li><a href="http://loginsurfnet.com/servicios.html">SERVICIOS</a></li>
+                    <li><a href="http://loginsurfnet.com/precios.html">PRECIOS</a></li>                   
+                    <li><a href="http://loginsurfnet.com/free.html">PROMOCIÓN</a></li>
+                    <li><a href="http://loginsurfnet.com/faq.html">FAQ</a></li>                   
+					<li><a href="http://loginsurfnet.com/mundial.html">INTRANET</a></li> 
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="well">
+            <div class="row">			
+            <!--<div class="col-md-4 col-md-push-8">
+                    <br>
+					<div class="text-center">
+                      						
+                    </div>				                 
+                </div>
+                <div class="col-md-8 col-md-pull-4" style="padding:0 0">                                  
+                    
+                </div>-->
+				 <div class="col-md-12">                   
+					<div class="text-center">
+                      <center>
+						<div id="main">
+						<img src="scan/img/app.png" alt="">												
+						<div id="mainbody">
+							<div class="progresso">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>	
+							<div class="camera" id="outdiv"></div>
+							<div style="display: table;">
+								<div style="display: table-row;">
+									<div style="display: table-cell; padding:3px;">
+									  <div class="btn" id="reload" onclick="location.reload();">Reload Camera</div>
+									</div>
+									<div style="display: table-cell; padding:3px;">
+									  <div class="btn" onclick="document.location = 'googlechrome://navigate?url=https://192.168.5.20/qrscan/';">Open in Chrome</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div>SurfNet QR Code Scanner <br>Powered by <a href="#">webqr</a></div>
+					</center> 
+					<canvas style="display:none;" id="qr-canvas" width="800" height="600"></canvas> 						
+                    </div>				                 
+                </div>
+				
+				<small>
+		            <marquee class="running-text text-info" direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start() ">
+		                Bono de INTERNET GRATIS de 2GB Todo el día por compras mayores a 10 soles... Si necesita más información por favor contáctenos al <a href="tel:+51074250000"><b>+51074250000</b> .</a> SURFNET "Conecta Tu Vida", somos su mejor obción para su  <a href="support.html"><b>COMUNICACIÓN</b></a>
+		            </marquee>
+		        </small>
+            </div>
+            <div class="row">
+                <div class="">
+                </div>
+            </div>           
+        </div>
+    </div>
+    <script type="text/javascript" src="scan/js/llqrcode.js"></script>
+    <script type="text/javascript" src="scan/js/webqr.js"></script>
+	<script type="text/javascript">load();</script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>   
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>	 
+</body>
+</html>
