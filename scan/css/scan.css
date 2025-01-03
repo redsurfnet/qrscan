@@ -8,7 +8,7 @@ video {
       margin-top:5px;
       margin-bottom:10px;
       padding:5px;
-      background-color: #20a8d8;
+      background-color: #337ab7;
       color: #f3f4f5;
       border-radius:3px;
       width: 140px;
@@ -16,7 +16,7 @@ video {
     }
     .camera{
       padding:5px;
-      background-color: #20a8d8;
+      background-color: #337ab7;
       border-radius:3px;
       width: 90%;
 	  -webkit-box-shadow:0 8px 6px -6px #696969;
