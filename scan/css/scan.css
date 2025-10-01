@@ -10,8 +10,8 @@
 	  left: 50%; /* Centrar horizontalmente */
 	  width: 80%; /* Solo cubrir el 80% */
 	  height: 2px;
-	  background: rgba(61, 82, 157, 0.6);
-	  box-shadow: 0 0 20px 5px rgba(61, 82, 157, 0.8);
+	  background: rgba(51, 122, 183, 0.6);
+	  box-shadow: 0 0 20px 5px rgba(51, 122, 183, 0.8);
 	  pointer-events: none;
 	  animation: scanning 4s linear infinite alternate;
 	  z-index: 1;
@@ -101,4 +101,5 @@ video {
       width: 120px;      
     }	
 }
+
 
