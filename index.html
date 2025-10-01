@@ -179,7 +179,7 @@
 
         .well {
             padding: 0 15px;
-            background: #ffffff;
+            background: transparent;
             border-radius: 8px;
             border:none;
             -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -261,12 +261,12 @@
                         <canvas style="display:none;" id="qr-canvas" width="800" height="600"></canvas>
                     </div>
                 </div>
-
                 <small>
-                    <marquee class="running-text text-info" direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start() ">
-                        Apunte su cámara hacia el <b>código QR</b> para escánear....Si la cámara no puede enfocar, está borrosa o dañada, es posible que no puedas escanearlo.
-                    </marquee>
-                </small>
+		            <div class="marquee text-dark">
+		               <p>Apunte su cámara hacia el <b>código QR</b> para escánear....Si la cámara no puede enfocar, está borrosa o dañada, es posible que no puedas escanearlo.
+		               </p>
+                    </div>
+		        </small>                
             </div>
             <div class="row">
                 <div class="">
@@ -286,5 +286,6 @@
 </body>
 
 </html>
+
 
 
