@@ -90,7 +90,7 @@ video {
       }
       10% {     
         transform: translate(0, -15px); 
-        background-color: #20a8d8;    
+        background-color: #337ab7;    
       }  
     }
 	@media (max-width: 768px) {
@@ -101,5 +101,6 @@ video {
       width: 120px;      
     }	
 }
+
 
 
