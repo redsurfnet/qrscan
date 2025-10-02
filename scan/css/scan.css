@@ -160,10 +160,14 @@ video {
 	.camera{      
       width: 100%;
     }
+	.marquee {        
+	 width: 100%;        
+    }
 	.btn{      
       width: 120px;      
     }	
 }
+
 
 
 
